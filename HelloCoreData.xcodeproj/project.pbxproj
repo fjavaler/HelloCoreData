@@ -11,6 +11,8 @@
 		31C6561927496E2E00486386 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6561827496E2E00486386 /* ContentView.swift */; };
 		31C6561B27496E2F00486386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C6561A27496E2F00486386 /* Assets.xcassets */; };
 		31C6561E27496E2F00486386 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C6561D27496E2F00486386 /* Preview Assets.xcassets */; };
+		31C6562927497DFE00486386 /* HelloCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31C6562727497DFE00486386 /* HelloCoreData.xcdatamodeld */; };
+		31C6562B27497E3600486386 /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6562A27497E3600486386 /* StorageProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		31C6561827496E2E00486386 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		31C6561A27496E2F00486386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31C6561D27496E2F00486386 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31C6562827497DFE00486386 /* HelloCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloCoreData.xcdatamodel; sourceTree = "<group>"; };
+		31C6562A27497E3600486386 /* StorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 		31C6560A27496E2E00486386 = {
 			isa = PBXGroup;
 			children = (
+				31C6562727497DFE00486386 /* HelloCoreData.xcdatamodeld */,
 				31C6561527496E2E00486386 /* HelloCoreData */,
 				31C6561427496E2E00486386 /* Products */,
 			);
@@ -52,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				31C6561627496E2E00486386 /* HelloCoreDataApp.swift */,
+				31C6562A27497E3600486386 /* StorageProvider.swift */,
 				31C6561827496E2E00486386 /* ContentView.swift */,
 				31C6561A27496E2F00486386 /* Assets.xcassets */,
 				31C6561C27496E2F00486386 /* Preview Content */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C6562B27497E3600486386 /* StorageProvider.swift in Sources */,
+				31C6562927497DFE00486386 /* HelloCoreData.xcdatamodeld in Sources */,
 				31C6561927496E2E00486386 /* ContentView.swift in Sources */,
 				31C6561727496E2E00486386 /* HelloCoreDataApp.swift in Sources */,
 			);
@@ -341,6 +349,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		31C6562727497DFE00486386 /* HelloCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				31C6562827497DFE00486386 /* HelloCoreData.xcdatamodel */,
+			);
+			currentVersion = 31C6562827497DFE00486386 /* HelloCoreData.xcdatamodel */;
+			path = HelloCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 31C6560B27496E2E00486386 /* Project object */;
 }
