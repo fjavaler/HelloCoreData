@@ -12,7 +12,7 @@ struct HelloCoreDataApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ContentView(storageProvider: StorageProvider())
+      ContentView(viewModel: ContentViewModel())
     }
   }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31802B0227498D73001E3671 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31802B0127498D73001E3671 /* ContentViewModel.swift */; };
 		31C6561727496E2E00486386 /* HelloCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6561627496E2E00486386 /* HelloCoreDataApp.swift */; };
 		31C6561927496E2E00486386 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C6561827496E2E00486386 /* ContentView.swift */; };
 		31C6561B27496E2F00486386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C6561A27496E2F00486386 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31802B0127498D73001E3671 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		31C6561327496E2E00486386 /* HelloCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C6561627496E2E00486386 /* HelloCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoreDataApp.swift; sourceTree = "<group>"; };
 		31C6561827496E2E00486386 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,10 +38,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31C6560A27496E2E00486386 = {
+		31802AFD27498D3A001E3671 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				31C6562727497DFE00486386 /* HelloCoreData.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31802AFE27498D41001E3671 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31C6561827496E2E00486386 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31802AFF27498D46001E3671 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				31802B0127498D73001E3671 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31802B0027498D56001E3671 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				31C6562A27497E3600486386 /* StorageProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		31C6560A27496E2E00486386 = {
+			isa = PBXGroup;
+			children = (
+				31C6561627496E2E00486386 /* HelloCoreDataApp.swift */,
 				31C6561527496E2E00486386 /* HelloCoreData */,
 				31C6561427496E2E00486386 /* Products */,
 			);
@@ -56,9 +90,10 @@
 		31C6561527496E2E00486386 /* HelloCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				31C6561627496E2E00486386 /* HelloCoreDataApp.swift */,
-				31C6562A27497E3600486386 /* StorageProvider.swift */,
-				31C6561827496E2E00486386 /* ContentView.swift */,
+				31802B0027498D56001E3671 /* Services */,
+				31802AFF27498D46001E3671 /* ViewModels */,
+				31802AFE27498D41001E3671 /* Views */,
+				31802AFD27498D3A001E3671 /* Models */,
 				31C6561A27496E2F00486386 /* Assets.xcassets */,
 				31C6561C27496E2F00486386 /* Preview Content */,
 			);
@@ -147,6 +182,7 @@
 				31C6562927497DFE00486386 /* HelloCoreData.xcdatamodeld in Sources */,
 				31C6561927496E2E00486386 /* ContentView.swift in Sources */,
 				31C6561727496E2E00486386 /* HelloCoreDataApp.swift in Sources */,
+				31802B0227498D73001E3671 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
