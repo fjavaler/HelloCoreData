@@ -9,6 +9,7 @@
     </entity>
     <entity name="Movie" representedClassName="Movie" syncable="YES" codeGenerationType="class">
         <attribute name="duration" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="posterImage" optional="YES" attributeType="Transformable" valueTransformerName="UIImageTransformer" customClassName="UIImage"/>
         <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="releaseDate" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" attributeType="String" minValueString="1"/>
@@ -18,6 +19,6 @@
     <elements>
         <element name="Actor" positionX="-348.87890625" positionY="229.02734375" width="128" height="73"/>
         <element name="Character" positionX="-353.84765625" positionY="110.79296875" width="128" height="44"/>
-        <element name="Movie" positionX="-590.8515625" positionY="148.94140625" width="128" height="119"/>
+        <element name="Movie" positionX="-590.8515625" positionY="148.94140625" width="128" height="134"/>
     </elements>
 </model>

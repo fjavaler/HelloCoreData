@@ -19,6 +19,9 @@ class StorageProvider {
   // MARK: Init
   init() {
     
+    // Sets a value transformer for use (e.g. UIImageTransformer transforms an image to data and vice-versa).
+    ValueTransformer.setValueTransformer(UIImageTransformer(), forName: NSValueTransformerName(rawValue: "UIImageTransformer"))
+    
     persistentContainer = NSPersistentContainer(name: "HelloCoreData")
     
     persistentContainer.loadPersistentStores { description, error in
