@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct HelloCoreDataApp: App {
+  @StateObject var storageProvider: StorageProvider = StorageProvider()
   
   var body: some Scene {
     WindowGroup {
-      ContentView(viewModel: ContentViewModel())
+      MoviesView(viewModel: MoviesViewModel(storageProvider: storageProvider))
+        .environment(\.managedObjectContext, storageProvider.persistentContainer.viewContext)
+        .environmentObject(storageProvider)
     }
   }
 }

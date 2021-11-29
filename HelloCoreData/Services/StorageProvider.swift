@@ -11,7 +11,7 @@ enum DataErrors: Error {
   case deleteError(movie: Movie)
 }
 
-class StorageProvider {
+class StorageProvider: ObservableObject {
   
   // MARK: Properties
   let persistentContainer: NSPersistentContainer
@@ -75,6 +75,4 @@ class StorageProvider {
       print("Failed to save context: \(error)")
     }
   }
-
-  
 }
